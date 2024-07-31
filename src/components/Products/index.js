@@ -1,7 +1,7 @@
 import Header from '../../components/Header';
 import styles from './products.module.css'
 
-function Products () {
+function Products ( { children } ) {
     return(
         <>
             <Header />
@@ -9,7 +9,7 @@ function Products () {
                 <h1>Confira Nossos Produtos</h1>
 
                 <div className={styles.product}>
-
+                    { children }
                 </div>
             </div>
         </>    
